@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta name="viewport" content="width=device-width;">
+        <meta charset="utf-8">
+        <title>Very Nice Book</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            body,html{
+                margin: 0 0;
+                padding: 0 0;
+                box-sizing: border-box;
+                color: white;
+            }
+            body{
+                background: rgb(34,193,195);
+
+            }
+            .container{
+                max-width: 1200px;
+                margin:0 auto;
+            }
+            @media screen (max-width:1200px){
+                .container{
+                    max-width: 970px;
+                }
+            }
+            @media (max-width:992px){
+                .container{
+                    max-width: 750px;
+                }
+            }
+            @media screen (max-width:767){
+                .container {
+                    max-width: none;
+                }
+                }
+/*            Header*/
+            header{
+                
+                padding-top: 30px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 1000;
+                        }
+            .intro{
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                text-align: center;
+                
+            }
+            .inner_header{
+                
+                display: flex;
+                justify-content: space-between;
+                
+            }
+            nav a{
+                color: black;
+                font-size: 18px;
+                text-transform: uppercase;
+                margin-left: 30px;
+                text-decoration: none;
+            }
+            .nav__link{
+            position: relative;
+            }
+            .nav__link:after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 3px;
+
+                background-color: #fce38a;
+                opacity: 1;
+
+                position: absolute;
+                top: 100%;
+                left: 0;
+                z-index: 1;
+
+                transition: opacity .1s linear;
+            }
+            nav a:hover{
+                font-size: 20px;
+            }
+            section{
+                height: 900px;
+            }
+            
+/*            Section*/
+            img{
+                max-width: 500px;
+                max-height: 500px;
+            }
+            .headline{
+                height: 70px;
+                margin: 10px;
+                text-transform: uppercase;
+                font-size: 27px;
+                text-align: center;
+            }
+            .inner-section{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                padding: 10px;
+            }
+            .section{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: center;
+                
+            }
+            .article1{
+                padding: 10px;
+            }
+/*            FOOTER*/
+            footer{
+                position: relative;
+                bottom: 0;
+                padding: 20px;
+                color: black;
+                height: 50px;
+                background-color: #c7d4d2;
+            }
+            .footer__nav{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="inner_header">
+                   <h1>FOR YOU</h1>
+                    <nav>
+                    <a href="https://www.amazon.com/Why-We-Sleep-Unlocking-Dreams/dp/1501144316">About</a>
+                    <a href="https://www.amazon.com/Why-We-Sleep-Unlocking-Dreams/dp/1501144316">Terms and conditions</a>
+                    <a href="policy.html">Policy</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="intro">
+             <div class="container">
+                 <div class="intro__inner">
+                     <h1 class="intro__title">You need to know it!</h1>
+                 </div>
+             </div>
+        </div>
+        <section>
+            <div class="container">
+              <div class="section">
+              <h1 class="headline">You need to know it!</h1>
+             
+                <img src="img/1_vmwtkM3QuifCzi3PDpN29g.jpg" alt="" class="main-img"  width="80%" height="79%">
+                  
+             
+               <div class="inner-section">
+                        <div class="article1"> <p>Why We Sleep is an important and fascinating book…Walker taught me a lot about this basic activity that every person on Earth needs. I suspect his book will do the same for you.</p></div>
+                        <div class="article1"> <p>Sleep is one of the most important but least understood aspects of our life, wellness, and longevity. Until very recently, science had no answer to the question of why we sleep, or what good it served, or why we suffer such devastating health consequences when we don't sleep. Compared to the other basic drives in life—eating, drinking, and reproducing—the purpose of sleep remained elusive.</p></div>
+                </div>
+                <div class="inner-section">
+                        <div class="article1"><img src="" alt=""> <p>An explosion of scientific discoveries in the last twenty years has shed new light on this fundamental aspect of our lives. Now, preeminent neuroscientist and sleep expert Matthew Walker gives us a new understanding of the vital importance of sleep and dreaming. Within the brain, sleep enriches our ability to learn, memorize, and make logical decisions. It recalibrates our emotions, restocks our immune system, fine-tunes our metabolism, and regulates our appetite. Dreaming mollifies painful memories and creates a virtual reality space in which the brain melds past and present knowledge to inspire creativity.</p></div>
+                        
+                </div>
+              </div>
+                
+                
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="footer">
+                    <nav class="footer__nav">
+                    <a href="https://www.amazon.com/Why-We-Sleep-Unlocking-Dreams/dp/1501144316">O nas</a>
+                    <a href="https://www.amazon.com/Why-We-Sleep-Unlocking-Dreams/dp/1501144316">Terms and conditions</a>
+                    <a href="policy.html">Policy</a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
